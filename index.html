@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Linkar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Projeto Casa do Vira Lata</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body>
+    
+    <!-- === NAV BAR === -->
+
+    <nav class="navcontainer">
+        <div class="navbar">
+            <img class="logo-v1" src="./assets/images/logo.svg" alt="Logo Casa do Vira Lata">
+            <a href="#home" class="logo-v2">
+                <img src="./assets/images/logo_v2.svg" alt="Logo Casa do Vira Lata">
+            </a>
+            <ul class="navmenu">
+                <li><a href="#como-funciona" class="nav-btn1">Como funciona?</a></li>
+                <li><a href="#quem-somos" class="nav-btn2">Quem somos?</a></li>
+                <li><a href="#voluntarios" class="nav-btn3">Os voluntários</a></li>
+                <li><a href="#ajudar" class="btn">Quero ajudar!</a></li>
+            </ul>
+            <!-- ícone do menu sanduíche -->
+            <i class="fa-solid fa-bars menu-btn" onclick="changeIcon(this)"></i>
+        </div>
+               
+    </nav>
+
+    <!-- === NAV BAR === -->
+
+
+
+    <!-- === HERO === -->
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Adotar é um ato de amor.</h1>
+            <p>Não existem animais de rua, existem animais nas ruas e eles precisam de nós.</p>
+            <a href="#ajudar" class="btn">Quero ajudar!</a>
+        </div>
+    </header>
+
+    <!-- === HERO === -->
+
+    
+
+    <!-- === STEPS === -->
+
+    <section class="steps" id="como-funciona">
+        <div class="steps-title">
+            <h2>Como funciona?</h2>
+            <p>Pra adotar é muito mais fácil do que você imagina! Olha só:</p>
+        </div>
+          
+        <div class="steps-list">
+            <div class="step-item">
+                <img src="./assets/images/casual-life-3d-girl-with-cup-studying.png" alt="Ilustração Garota estudando">
+                <h3>Passo 1</h3>
+                <p>Preencha o formulário de interesse no fim desta página e aguarde até um de nossos voluntários entrar em contato.
+                </p>
+            </div>
+            
+            <div class="step-item">
+                <img src="./assets/images/casual-life-3d-likes.png" alt="Ilustração Garota recebendo likes">
+                <h3>Passo 2</h3>
+                <p>Caso seja aprovado, você irá receber uma lista atualizada com os pets disponíveis para adoção.</p>
+            </div>
+            
+            <div class="step-item">
+                <img src="./assets/images/casual-life-3d-girl-squatting-and-stroking-a-dog-1.png"
+                    alt="Ilustração Garota e cachorro">
+                <h3>Passo 3</h3>
+                <p>Agende uma visita na nossa sede para buscar seu novo pet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- === STEPS === -->
+
+
+
+    <!-- === ABOUT === -->
+     
+    <section class="about" id="quem-somos">    
+        <div class="about-list">    
+            <div class="about-item">
+                <h2>Quem somos?</h2>
+                <p>Somos uma instituição de voluntários formada por moradores de Guarulhos e queremos levar dignidade, saúde e amor aos animais nas ruas dessa região.</p>
+            </div>
+    
+            <div class="about-item gallery">
+                <figure class="gallery-item">
+                    <img src="./assets/images/spencer-davis-wvnSt-oYIB4-unsplash.jpg" alt="">
+                    <img src="./assets/images/mbalimbali-_YSVcE9n1fs-unsplash.jpg" alt="">
+                    <img src="./assets/images/syed-ahmad-wRcWEDh7rbk-unsplash.jpg" alt="">
+                    <img src="./assets/images/chewy-1p7TrM0LkXc-unsplash.jpg" alt="">
+                </figure>    
+            </div>                       
+        </div>    
+    </section>
+    
+    <!-- === ABOUT === -->
+
+
+
+    <!-- === VOLUNTARIES === -->
+
+    <div class="voluntaries-background" id="voluntarios">
+        <section class="voluntaries-a">
+            <div class="voluntaries-item">
+                <h2>Conheça os voluntários</h2>
+                <p>Saiba quem está por trás do projeto que ajuda centenas de cães.</p>
+            </div>
+        
+            <!-- Cards -->
+            <div class="swiper mySwiper voluntaries-b">
+                <div class="swiper-wrapper voluntaries-content">
+        
+                    <!-- Emmanuel -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/emmanuel.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Emmanuel</p>
+                                <p>Financeiro</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Guilherme -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/guilherme.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Guilherme</p>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Caroline -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/caroline.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Caroline</p>
+                                <p>Veterinária</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Amanda -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/amanda.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Amanda</p>
+                                <p>Logística</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Mike -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/mike.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Mike</p>
+                                <p>Logística</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Natalia -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/natalia.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Natalia</p>
+                                <p>Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Leandro -->
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./assets/images/leandro.png" alt="">
+                            </div>
+                            <div class="name-profession">
+                                <p class="name-profession-bold">Leandro</p>
+                                <p>Atendimento</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+    </div>
+    <!-- === VOLUNTARIES === -->
+
+
+
+    <!-- === CADASTRO === -->
+
+    <div class="register-title" id="ajudar">
+        <h2>Adote um cão agora mesmo!</h2>
+        <p>Você também pode contribuir com o futuro de outros cães se voluntariando ou realizando uma doação.</p>
+    </div>
+
+    <section class="register">
+
+        <img src="./assets/images/caozinho.png" alt="Cachorro no ombro da dona">
+        
+        <form class="form-container" name="dados" id="dados" action="" method="post">
+        
+            <div class="ajuda-sede">
+                <div class="form-item">
+                    <label>Como você quer ajudar</label>
+                    <select id="ajuda">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="1">Adoção</option>
+                        <option value="2">Voluntário</option>
+                        <option value="3">Doação</option>
+                    </select>
+                </div>
+        
+                <div class="form-item">
+                    <label>Selecione a sede (SP)</label>
+                    <select id="sede">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Campinas</option>
+                        <option value="3">Guarulhos</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="form-item">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+        
+            <div class="form-item">
+                <label for="whats">Seu Whatsapp</label>
+                <input type="text" id="numero" placeholder="Digite seu celular">
+            </div>
+        
+            <div class="form-item checkbox">
+                <input type="checkbox" name="contato" id="contato" value="1">
+                <label for="contato">Aceito que a Casa do Vira Lata entre em contato comigo</label>
+            </div>
+        
+            <div class="form-item checkbox">
+                <input type="checkbox" name="termos" id="termos" value="1">
+                <label for="termos">Aceito os Termos de Uso da Casa do Vira Lata</label>
+            </div>
+        
+            <button class="form-btn" type="submit">Quero ajudar!</button>
+        
+        </form>
+        
+    </section>
+
+    <!-- === CADASTRO === -->
+
+
+
+    <!-- === RODAPÉ === -->
+
+    <footer class="footer">
+        <p>Projetado e desenvolvido por</p><p class="footer-bold">Caio Rodrigues</p>
+    </footer>
+
+    <!-- === RODAPÉ === -->
+
+
+
+
+
+    <!-- Menu JS -->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- Swiper JS RESPONSIVO -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+
+
+
+</body>
+</html>

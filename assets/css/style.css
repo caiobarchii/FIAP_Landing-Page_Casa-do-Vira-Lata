@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-dark: #39322E;
+    --color-neutral-medium: #9C8F8F;
+    --color-neutral-light: #FFF5F1;
+    --color-neutral-lightnest: #FFFFFF;
+    
+    --color-primary-dark: #380949;
+    --color-primary-medium: #540D6E;
+    --color-primary-light: #701192;
+    --color-primary-lightnest: #8C15B7;
+
+    --color-secondary-medium: #FFC60A;
+    --color-secondary-dark: #FFD23F;
+    --color-secondary-light: #FFDE70;
+    --color-secondary-lightnest: #FFE799;
+
+    --color-report: #1051CF;
+    --color-error: #CF101B;
+    --color-sucess: #508110;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+a, ul {
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-neutral-lightnest);
+    font-size: 1.8rem;
+}
+
+body {
+    background-color: var(--color-neutral-light);
+}
+
+/* ======================= */
+
+h1 {
+    font-size: 6.8rem;
+    font-weight: 800;
+    line-height: 100%;
+    color: var(--color-primary-dark)
+}
+
+h2 {
+    color: var(--color-primary-dark);
+    font-size: 3.2rem;
+    font-weight: 800;
+    padding: 0 0 2rem;
+}
+
+h3 {
+    color: var(--color-primary-dark);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+p {
+    color: var(--color-primary-dark);
+    font-size: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.btn {
+    background-color: var(--color-primary-light);
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: .5s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-lightnest);
+}
+
+.form-btn {
+    background-color: var(--color-secondary-medium);
+    color: var(--color-neutral-dark);
+    font-family: nunito;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    transition: .5s;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: var(--color-secondary-lightnest);
+}
+
+
+
+
+
+
+
+/* ======= NAV BAR ======= */
+.navcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
+    width: 90%;
+    max-width: 1440px;
+  
+    margin: 1.8rem;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+
+.navmenu li {
+    margin: 0 1.8rem;
+}
+
+.nav-btn1:hover, .nav-btn2:hover, .nav-btn3:hover {
+    color: var(--color-secondary-medium);
+}
+
+.menu-btn {
+    cursor: pointer;
+    font-size: 4rem;
+    color: var(--color-neutral-lightnest);
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.logo-v2 {
+    display: none;
+}
+/* ======= NAV BAR ======= */
+
+
+
+/* ======= HERO ======= */
+.hero {
+    width: 100%;
+    height: 50%;
+
+    background-image: url(../images/foto-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    display: flex;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1440px;
+
+    margin: 20rem auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content p, h1, a {
+    max-width: 300px;
+    font-weight: 800;
+}
+/* ======= HERO ======= */
+
+
+
+/* ======= STEPS ======= */
+.steps {
+    width: 90%;
+    max-width: 1440px;
+
+    margin: 3.8rem auto;
+    text-align: center;
+}
+
+
+.steps-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-item {
+    background-color: var(--color-neutral-lightnest);
+    width: 30%;
+    min-height: 450px;
+    margin: 3rem 2rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+}
+/* ======= STEPS ======= */
+
+
+
+/* ======= ABOUT ======= */
+.about {
+    width: 90%;
+    max-width: 1440px;
+       
+    display: flex;
+
+    margin: auto;
+    text-align: center;
+}
+
+.gallery-item {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery-item img {
+    width: 50%;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+/* ======= ABOUT ======= */
+
+
+
+/* ======= VOLUNTARIES ======= */
+.voluntaries-background {
+    background-color: var(--color-secondary-lightnest);
+}
+
+.voluntaries-a {
+    width: 90%;
+    max-width: 1440px;
+    padding: 3rem 0 2rem;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.voluntaries-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem 4rem;
+}
+
+.swiper {
+    width: 80%;
+}
+
+section .card .image {
+    height: 80%;
+    width: 80%;
+}
+
+section .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0rem;
+}
+
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-profession p {
+    padding: 0;
+}
+
+.name-profession-bold {
+    padding: 0;
+    font-weight: 800;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary-dark);
+    transition: .4s;
+}
+
+.swiper-button-prev, .swiper-rtl, .swiper-button-next {
+    color: var(--color-primary-dark); 
+}
+
+/* ======= VOLUNTARIES ======= */
+
+
+
+/* ======= CADASTRO ======= */
+
+.register {
+    width: 90%;
+    max-width: 1440px;
+       
+    display: flex;
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-title {
+    width: 90%;
+    max-width: 1440px;
+    text-align: center;
+    margin: auto;
+}
+
+.register img {
+    width: 30%;
+}
+
+.form-container {
+    background-color: var(--color-neutral-lightnest);
+    margin: 5rem;
+    font-size: 1.4rem;
+    color: var(--color-neutral-dark);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+}
+
+.ajuda-sede {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 1rem;
+    text-align: left;
+}
+
+.form-item input {
+    border-radius: 0.5rem;
+    border-color: var(--color-neutral-medium);
+    border: 0.2rem solid var(--color-neutral-medium);
+    padding: 1rem;
+}
+
+.form-item select {
+    border-radius: 0.5rem;
+    border-color: var(--color-neutral-medium);
+    border: 0.2rem solid var(--color-neutral-medium);
+    padding: 1rem;
+    width: 18rem;    
+}
+
+.checkbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkbox label {
+    padding: 0 0.5rem;
+}
+
+/* ======= CADASTRO ======= */
+
+
+
+/* ======= RODAPÉ ======= */
+
+.footer {
+    background-color: var(--color-secondary-medium);
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+    padding: 3rem 0;
+}
+
+.footer-bold {
+    font-weight: 800;
+    padding-left: 0.5rem;
+}
+
+/* ======= RODAPÉ ======= */
+
+
+
+
+
+/* ============================
+            RESPONSIVO
+=============================== */
+
+/* Laptop */
+@media (max-width: 1024px) {
+
+    html {font-size: 50%;}
+    .step-item {min-height: 300px;}
+}
+
+
+@media (max-width: 690px) {
+    
+    
+    /* ======= NAV BAR ======= */
+    .navbar {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 3;      
+    }
+    
+    .navmenu {               
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: var(--color-primary-medium);   
+        margin-top: -1100px;
+        transition: .5s;  
+    }
+
+    .navmenu li {
+        margin: 5rem;
+        text-transform: uppercase;
+    }
+
+    .menu-btn {
+        display: block;
+        color: var(--color-secondary-medium);
+        top: 4rem;
+        right: 4rem;
+    }
+
+    .logo-v2 {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        left: 4rem;
+    }
+
+    .logo-v1 {
+        display: none;
+    }
+
+    .mobile-menu {
+        margin-top: 0;
+    }
+    /* ======= NAV BAR ======= */
+    
+
+
+    /* ======= HERO ======= */
+    .hero {
+        background-image: linear-gradient(to top, #FFF5F1, rgba(0,0,0,0)),
+        url(../images/foto-header.png);
+        background-size: cover;
+        background-position: 65%;
+    }
+
+    .hero-content {
+        text-align: center;
+        align-items: center;
+        margin-top: 300px;
+        margin-bottom: 0;
+    }
+    
+    .hero-content p, h1, a {
+        max-width: 500px;
+        font-weight: 800;
+    }
+    /* ======= HERO ======= */
+
+
+
+    /* ======= STEPS ======= */
+    .steps-list {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+
+    .step-item {
+        width: 90%;
+        align-items: center;
+    }
+
+    .step-item img {
+        width: 80%;
+    }
+
+    .gallery-item img {
+        width: 50%;
+        padding: 1.5rem;
+        border-radius: 3rem;
+    }
+    /* ======= STEPS ======= */
+
+
+
+    /* ======= VOLUNTARIES ======= */
+    .swiper-button-prev, .swiper-rtl, .swiper-button-next {
+        display: none;
+    }
+    /* ======= VOLUNTARIES ======= */
+
+
+
+    /* ======= CADASTRO ======= */
+    .register {
+        flex-direction: column;
+    }
+
+    .register img {
+        width: 80%;
+    }
+
+    .ajuda-sede {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .form-item select {
+        width: auto
+    }
+    /* ======= CADASTRO ======= */
+
+
+
+    /* ======= RODAPÉ ======= */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bold {
+        padding: 0;
+    }
+    /* ======= RODAPÉ ======= */
+}
